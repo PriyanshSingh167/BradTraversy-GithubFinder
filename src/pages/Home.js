@@ -1,9 +1,10 @@
 import React from "react";
 import UserResults from "../components/Users/UserResults";
+import UserSearch from "../components/Users/UserSeach";
 function Home() {
   return (
     <>
-      {/* Serach component */}
+      <UserSearch />
       <UserResults />
     </>
   );
