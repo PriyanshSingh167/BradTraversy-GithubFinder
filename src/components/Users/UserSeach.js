@@ -10,7 +10,6 @@ const UserSearch = () => {
   const handleChange = (e) => {
     setText(e.target.value);
   };
-
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -53,5 +52,4 @@ const UserSearch = () => {
     </div>
   );
 };
-
 export default UserSearch;

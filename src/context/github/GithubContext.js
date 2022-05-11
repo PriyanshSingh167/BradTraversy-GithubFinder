@@ -28,7 +28,7 @@ export const GithubProvider = ({ children }) => {
 
   // Get single user
   const getUser = async (login) => {
-    // setLoading();
+    setLoading();
 
     const response = await fetch(`${GITHUB_URL}/users/${login}`);
 
@@ -47,7 +47,7 @@ export const GithubProvider = ({ children }) => {
   // Get user repos
 
   const getUserRepos = async (login) => {
-    // setLoading();
+    setLoading();
     const params = new URLSearchParams({
       sort: "created",
       per_page: 10,
